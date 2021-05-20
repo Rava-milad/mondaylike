@@ -28,13 +28,16 @@
             {{-- <li class="nav-item">
                 <a class="nav-link disabled" href="#">Disabled</a>
             </li> --}}
-            <li class="nav-item">
-                @if(auth())
+            @if(auth()->check())
                 <form action="{{ route("logout") }}" method="POST">
-                    <a href="{{ route("logout") }}" class="nav-link text-white">Logout</a>
+                    @csrf
+
+                    <li class="nav-item">
+                        <a href="{{ route("logout") }}" class="nav-link">LogOut</a>
+                    </li>
+
                 </form>
-                @endif
-            </li>
+            @endif
             <li class="nav-item">
                 <a href="{{ route("login") }}" class="nav-link text-white text-bold">LogIn</a>
             </li>
