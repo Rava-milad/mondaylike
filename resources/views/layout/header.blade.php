@@ -39,7 +39,7 @@
                 </form>
             @endif
             <li class="nav-item">
-                <a href="{{ route("login") }}" class="nav-link text-white text-bold">LogIn</a>
+                <a href="{{ route("login") }}" class="nav-link text-white text-bold" id="login">LogIn</a>
             </li>
             <li class="nav-item">
                 <a href="{{ route("register") }}" class="nav-link text-white">Register</a>

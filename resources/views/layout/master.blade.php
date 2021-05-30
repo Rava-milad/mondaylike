@@ -22,10 +22,6 @@
         <div class="row">
             <div class="col-md-12">
                 @yield("part_one_content")
-                <h1 class="text-center justify-content-center font-weight-bold mt-5">This is the my first header for the mondaylike</h1>
-                
-                <img class="mt-5 mb-5" src="{{ asset("assets/image/bg.png") }}" alt="bg some thing" style="width: 100%;height:auto;">
-            
             </div>
         </div>
     </div>
@@ -46,7 +42,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="{{ asset("assets/js/jquery-3.6.0.min.js") }}"></script>
-    <script src="{{ asset("assets/js/app.js") }}"></script>
+    @yield("jquery")
 </body>
 
 </html>

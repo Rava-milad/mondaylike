@@ -23,7 +23,7 @@
                 class="fab fa-linkedin-in"></i></a>
 
         <!-- Github -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Rava-milad" role="button"><i
+        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Rava-milad" target="_blank" role="button"><i
                 class="fab fa-github"></i></a>
     </section>
     <!-- Section: Social media -->
