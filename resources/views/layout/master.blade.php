@@ -20,7 +20,10 @@
     {{-- this part of some first section pageLayout --}}
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12" >
+                <div class="container" id="main">
+                    
+                </div>
                 @yield("part_one_content")
             </div>
         </div>
@@ -42,7 +45,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="{{ asset("assets/js/jquery-3.6.0.min.js") }}"></script>
-    @yield("jquery")
+    <script src="{{ asset('assets/js/app.js') }}"></script>
 </body>
 
 </html>
