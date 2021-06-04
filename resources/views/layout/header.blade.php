@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
-    <a class="navbar-brand text-white" href="#">MoOn.com</a>
+    <a class="navbar-brand text-white" href="#" id="test">MoOn.com</a>
     <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon "></span>
@@ -39,7 +39,7 @@
                 </form>
             @endif
             <li class="nav-item">
-                <a href="{{ route("login") }}" class="nav-link text-white text-bold">LogIn</a>
+                <a href="{{ route("login") }}" class="nav-link text-white text-bold" id="login">LogIn</a>
             </li>
             <li class="nav-item">
                 <a href="{{ route("register") }}" class="nav-link text-white">Register</a>
@@ -54,3 +54,10 @@
         </form>
     </div>
 </nav>
+@section('jquery')
+    <script>
+        $(document).ready(function(){
+         
+        });
+    </script>
+@endsection

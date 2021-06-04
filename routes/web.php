@@ -18,4 +18,7 @@ Auth::routes();
 Route::get('/', function () {
     return view('layout.master');
 });
+Route::get('/test', function(){
+    return view('welcome');
+});
 

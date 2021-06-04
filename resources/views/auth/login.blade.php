@@ -71,3 +71,10 @@
     </div>
 </div>
 @endsection
+@section("jquery")
+    <script>
+        $("document").ready(function(){
+            
+        });
+    </script>
+@endsection
