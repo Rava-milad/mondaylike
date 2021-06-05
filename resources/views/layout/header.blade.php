@@ -31,19 +31,19 @@
             @if(auth()->check())
                 <form action="{{ route("logout") }}" method="POST">
                     @csrf
-
-                    <li class="nav-item">
-                        <a href="{{ route("logout") }}" class="nav-link">LogOut</a>
-                    </li>
-
+                    {{-- <li class="nav-item">
+                        <a href="{{ route("logout") }}" class="nav-link text-white">LogOut</a>
+                    </li> --}}
+                    <button class="btn btn-dark">logout</button>
                 </form>
-            @endif
+            @else
             <li class="nav-item">
                 <a href="{{ route("login") }}" class="nav-link text-white text-bold" id="login">LogIn</a>
             </li>
             <li class="nav-item">
                 <a href="{{ route("register") }}" class="nav-link text-white">Register</a>
             </li>
+            @endif
 
                 
             
@@ -54,10 +54,3 @@
         </form>
     </div>
 </nav>
-@section('jquery')
-    <script>
-        $(document).ready(function(){
-         
-        });
-    </script>
-@endsection
