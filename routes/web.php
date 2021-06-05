@@ -18,10 +18,15 @@ Auth::routes();
 Route::get('/home', function () {
     return view('pages.home');
 });
+Route::get('/logout' , 'AdminController@logout');
 Route::get('/' , function() {
     return view('pages.home');
 });
 Route::get('/test', function(){
     return view('welcome');
+});
+// Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
+Route::prefix('/admin')->group(function(){
+    Route::get('/panel' , 'AdminController@panel')->name('panel');
 });
 

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge , chrome=1">
     <link rel="stylesheet" href="{{ asset("assets/css/bootstrap.min.css") }}">
-    <link rel="stylesheet" href="{{ asset("assets/css/style.css") }}">
+    {{-- <link rel="stylesheet" href="{{ asset("assets/css/style.css") }}"> --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>@yield("title")MoOn</title>
 </head>
@@ -21,9 +21,6 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12" >
-                <div class="container" id="main">
-                    
-                </div>
                 @yield("part_one_content")
             </div>
         </div>
