@@ -39,9 +39,10 @@
     });
 
     $(document).ready(function(){
-        var submit = $('#submit');
-        submit.on('click' , function(){
-            
+        var making = $('#making');
+        var some = $('#some');
+        making.on('click' , function(){
+            some.append("<div class='container mt-5'><div class='row'><div class='col-md-12'><form><div class='form-group'><label class='form-group'>Group Title<input name='group' class='form-control'></label></div></form></div></div></div>");
         });
     });
 }());

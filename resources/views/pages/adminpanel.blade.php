@@ -49,7 +49,16 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="height-100 bg-light">
-                                <h4 class="text-center">Main components</h4>
+                                <button class="btn btn-primary mt-5" id="making">
+                                    New item
+                                </button>
+
+
+                                <div id="some"></div>
+
+                                {{-- @php
+                                    var_dump($_GET);
+                                @endphp --}}
                             </div>
                         </div>
                     </div>
