@@ -1,3 +1,6 @@
+
+
+
 (function () {
     document.addEventListener("DOMContentLoaded", function (event) {
 
@@ -41,8 +44,51 @@
     $(document).ready(function(){
         var making = $('#making');
         var some = $('#some');
+        var group = '<div class="container mt-5">' +
+                        '<div class="row card">' +
+                        '<h1 class="text-center card-title mt-2"><b>Making Tasks</b></h1>' +
+                            '<div class="col-md-12">' +
+                                '<div class="card-body">' +
+                                    '<form action="">'+
+                                        '<div class="container">'+
+                                            '<div class="row">'+
+                                                '<div class="col-md-4">' +
+                                                    '<div class="form-group">' +
+                                                        '<label for="" class="my-2"><b>Task Name :</b> </label>' +
+                                                        '<input class="form-control" type="text" placeholder="write your task name..." name="group_title">'+
+                                                    '</div>'+
+                                                '</div>'+
+                                                '<div class="col-md-4">'+
+                                                    '<div class="form-group">' +
+                                                        '<label for="" class="my-2"><b>Number Of Partners :</b></label>'+
+                                                        '<select class="form-control" name="numbers" id="">' +
+                                                            '<option>1</option>' +
+                                                            '<option>2</option>' +
+                                                            '<option>3</option>' +
+                                                            '<option>4</option>' +
+                                                            '<option>5</option>' +
+                                                        '</select>' +
+                                                    '</div>' +
+                                                '</div>'+
+                                                '<div class="col-md-4">'+
+                                                    '<div class="form-group">'+
+                                                        '<label class="my-2" for=""><b>Date :</b></label>'+
+                                                        '<input class="form-control" name="date" type="date">'+
+                                                    '</div>'+   
+                                                '</div>'+
+                                                
+                                            '</div>'+
+                                        '</div>'+
+                                        '<div class="form-group text-center">'+
+                                            '<button class="mt-3 text-center btn btn-block btn-outline-primary">Create</button>'+
+                                        '</div>'+
+                                    '</form>'+
+                                '</div>' +                       
+                            '</div>' +
+                        '</div>' +
+                    '</div>';
         making.on('click' , function(){
-            some.append("<div class='container mt-5'><div class='row'><div class='col-md-12'><form><div class='form-group'><label class='form-group'>Group Title<input name='group' class='form-control'></label></div></form></div></div></div>");
+            some.append(group);
         });
     });
 }());
