@@ -76,8 +76,11 @@
                                                         '<input class="form-control" name="date" type="date">'+
                                                     '</div>'+   
                                                 '</div>'+
-                                                '<button class="mt-3 text-center btn btn-block btn-outline-primary">Create</button>'+
+                                                
                                             '</div>'+
+                                        '</div>'+
+                                        '<div class="form-group text-center">'+
+                                            '<button class="mt-3 text-center btn btn-block btn-outline-primary">Create</button>'+
                                         '</div>'+
                                     '</form>'+
                                 '</div>' +                       
