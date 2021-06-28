@@ -44,12 +44,14 @@
     $(document).ready(function(){
         var making = $('#making');
         var some = $('#some');
+        var csrf = $('meta[name="csrf-token"]').attr('content');
         var group = '<div class="container mt-5">' +
                         '<div class="row card">' +
                         '<h1 class="text-center card-title mt-2"><b>Making Tasks</b></h1>' +
                             '<div class="col-md-12">' +
                                 '<div class="card-body">' +
-                                    '<form action="">'+
+                                    '<form action="/admin/panel" method="POST">'+
+                                    '<input type="hidden" name="_token" value="'+csrf+'">'+
                                         '<div class="container">'+
                                             '<div class="row">'+
                                                 '<div class="col-md-4">' +

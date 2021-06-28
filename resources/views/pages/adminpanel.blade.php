@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AdminPanle</title>
@@ -24,8 +25,8 @@
 
                 <div class="l-navbar" id="nav-bar">
                     <nav class="nav">
-                        <div> <a href="#" class="nav_logo"> <i class='bx bx-layer nav_logo-icon'></i> <span
-                                    class="nav_logo-name">BBBootstrap</span> </a>
+                        <div> <a href="{{ url('/home') }}" class="nav_logo"> <i class='bx bx-layer nav_logo-icon'></i> <span
+                                    class="nav_logo-name">Home</span> </a>
                             <div class="nav_list"> <a href="#" class="nav_link active"> <i
                                         class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Workspace</span>
                                 </a> <a href="#" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span
@@ -58,11 +59,7 @@
                                 <div id="some"></div>
 
                                 @php
-                                    if($_GET){
-                                        var_dump($_GET);
-                                    }else{
-                                        echo "nothing set yet";
-                                    }
+                                   
                                 @endphp
 
                             </div>
