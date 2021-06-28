@@ -27,7 +27,9 @@ Route::get('/test', function(){
 });
 // Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Route::prefix('/admin')->middleware('auth')->group(function(){
-    Route::get('/panel' , 'AdminController@panel')->name('panel');
-    Route::post('/panel' , 'AdminController@panel');
+    Route::get('/panel' , 'AdminController@panel');
+    Route::post('/panel' , 'BestController@catch');
+    Route::get('/panel' , 'BestController@show');
+    Route::delete('/panel/{workspace}' , 'BestController@remove');
 });
 
