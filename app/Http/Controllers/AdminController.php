@@ -13,7 +13,10 @@ class AdminController extends Controller
     {
         return view('pages.adminpanel');
     }
-    
+    public function workspace()
+    {
+        return view('pages.workspace');
+    }
 
 
     

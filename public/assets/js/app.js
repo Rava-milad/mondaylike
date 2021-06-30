@@ -50,7 +50,7 @@
                         '<h1 class="text-center card-title mt-2"><b>Making Tasks</b></h1>' +
                             '<div class="col-md-12">' +
                                 '<div class="card-body">' +
-                                    '<form action="/admin/panel" method="POST">'+
+                                    '<form action="/admin/workspace" method="POST">'+
                                     '<input type="hidden" name="_token" value="'+csrf+'">'+
                                         '<div class="container">'+
                                             '<div class="row">'+

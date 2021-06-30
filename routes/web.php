@@ -1,6 +1,4 @@
-<?php
-
-use Illuminate\Support\Facades\Auth;
+<?php use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,20 +14,31 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/home', function () {
-    return view('pages.home');
-});
-Route::get('/logout' , 'AdminController@logout');
-Route::get('/' , function() {
-    return view('pages.home');
-});
-Route::get('/test', function(){
-    return view('welcome');
-});
-// Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
-Route::prefix('/admin')->middleware('auth')->group(function(){
-    Route::get('/panel' , 'AdminController@panel');
-    Route::post('/panel' , 'BestController@catch');
-    Route::get('/panel' , 'BestController@show');
-    Route::delete('/panel/{workspace}' , 'BestController@remove');
-});
+        return view('pages.home');
+    }
 
+);
+Route::get('/logout', 'AdminController@logout');
+
+Route::get('/', function() {
+        return view('pages.home');
+    }
+
+);
+
+Route::get('/test', function() {
+        return view('welcome');
+    }
+
+);
+
+// Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
+Route::prefix('/admin')->middleware('auth')->group(function() {
+    Route::get('/panel', 'AdminController@panel');
+    Route::get('/workspace', 'AdminController@workspace');
+    Route::post('/workspace', 'BestController@catch');
+    Route::get('/workspace', 'BestController@show');
+    Route::delete('/workspace/{id}', 'BestController@remove');
+
+
+});

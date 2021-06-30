@@ -24,7 +24,7 @@ class BestController extends Controller
     }
     public function show()
     {
-        return view('pages.adminpanel' , [
+        return view('pages.workspace' , [
             'workspace' => Best::all()
         ]);
     }
